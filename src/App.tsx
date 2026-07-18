@@ -1,3 +1,4 @@
+import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -5,9 +6,7 @@ function App() {
     <div className="min-h-screen bg-bg-primary">
       <Navbar />
       <main className="pt-16">
-        <section id="hero" className="min-h-screen flex items-center justify-center">
-          <h1 className="text-4xl font-bold text-text-primary">Hero Section</h1>
-        </section>
+        <Hero />
         <section id="about" className="min-h-screen p-8">
           <h2 className="text-3xl font-bold text-text-primary">About</h2>
         </section>
