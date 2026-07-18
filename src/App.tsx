@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Certificates from "./components/Certificates";
 
 function App() {
   return (
@@ -13,12 +15,8 @@ function App() {
         <About />
         <Skills />
         <Projects />
-        <section id="experience" className="min-h-screen p-8">
-          <h2 className="text-3xl font-bold text-text-primary">Experience</h2>
-        </section>
-        <section id="certificates" className="min-h-screen p-8">
-          <h2 className="text-3xl font-bold text-text-primary">Certificates</h2>
-        </section>
+        <Experience />
+        <Certificates />
       </main>
     </div>
   );
