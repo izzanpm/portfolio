@@ -55,7 +55,7 @@ export default function Hero() {
             {t("hero.cta.projects")}
           </button>
           <a
-            href="/cv.pdf"
+            href="https://drive.google.com/file/d/1eBxJuRAERFQyJVEIj5Tl8JrdLtXZBgj2/view?usp=sharing"
             download
             className="px-8 py-3 border border-border text-text-primary hover:bg-bg-surface font-medium rounded-lg transition-colors"
           >
