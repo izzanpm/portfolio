@@ -1,98 +1,27 @@
-import { motion } from "framer-motion";
-import { Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { cvUrl } from "../data/links";
+import { featuredProjects } from "../data/projects";
 import { useLanguage } from "../hooks/useLanguage";
+import EvidencePanel from "./EvidencePanel";
 
 export default function Hero() {
   const { t } = useLanguage();
-
-  function scrollToProjects() {
-    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
-  }
+  const project = featuredProjects[0];
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-accent bg-accent/10 rounded-full border border-accent/20">
-            {t("hero.badge")}
-          </span>
-        </motion.div>
-
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-text-primary leading-tight tracking-tight"
-        >
-          Mohammad Izzan
-          <br />
-          Putra Maulana
-        </motion.h1>
-
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-6 text-lg sm:text-xl text-text-secondary max-w-2xl mx-auto"
-        >
-          {t("hero.tagline")}
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
-        >
-          <button
-            onClick={scrollToProjects}
-            className="px-8 py-3 bg-accent hover:bg-accent-hover text-white font-medium rounded-lg transition-colors cursor-pointer"
-          >
-            {t("hero.cta.projects")}
-          </button>
-          <a
-            href="https://drive.google.com/file/d/1eBxJuRAERFQyJVEIj5Tl8JrdLtXZBgj2/view?usp=sharing"
-            download
-            className="px-8 py-3 border border-border text-text-primary hover:bg-bg-surface font-medium rounded-lg transition-colors"
-          >
-            {t("hero.cta.cv")}
-          </a>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-10 flex items-center justify-center gap-5"
-        >
-          <a
-            href="https://linkedin.com/in/izzanpm"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-text-secondary hover:text-accent transition-colors"
-            aria-label="LinkedIn"
-          >
-            <Linkedin size={22} />
-          </a>
-          <a
-            href="mailto:izzan.pm@gmail.com"
-            className="text-text-secondary hover:text-accent transition-colors"
-            aria-label="Gmail"
-          >
-            <Mail size={22} />
-          </a>
-          <a
-            href="mailto:izzan.pm@outlook.com"
-            className="text-text-secondary hover:text-accent transition-colors"
-            aria-label="Outlook"
-          >
-            <Mail size={22} />
-          </a>
-        </motion.div>
+    <section id="top" className="mx-auto grid min-h-[min(calc(100svh-4.5rem),56rem)] max-w-7xl items-center gap-12 px-5 py-16 lg:grid-cols-[0.88fr_1.12fr] lg:px-8">
+      <div>
+        <h1 className="max-w-3xl break-words text-5xl font-extrabold leading-[0.94] tracking-[-0.04em] sm:text-6xl xl:text-7xl">{t("hero.title")}</h1>
+        <p className="mt-6 font-mono text-xs uppercase tracking-[0.18em] text-signal"><span className="text-ink">Mohammad Izzan Putra Maulana</span> / {t("hero.label")}</p>
+        <p className="mt-4 max-w-xl text-base leading-7 text-muted sm:text-lg">{t("hero.body")}</p>
+        <div className="mt-9 flex flex-wrap gap-3">
+          <a href={cvUrl} target="_blank" rel="noreferrer" className="inline-flex min-h-11 items-center bg-signal px-5 font-semibold text-field">{t("nav.cv")}</a>
+          <a href="#contact" className="inline-flex min-h-11 items-center gap-2 border border-line px-5 text-ink hover:border-signal"><Mail size={18} />{t("hero.contact")}</a>
+        </div>
+      </div>
+      <div>
+        <p className="mb-3 font-mono text-[0.68rem] uppercase tracking-[0.14em] text-muted">01 / {project.title}</p>
+        <EvidencePanel project={project} compact />
       </div>
     </section>
   );

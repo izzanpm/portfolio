@@ -1,12 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg-primary: #0A0A0B;
-  --color-bg-surface: #141416;
-  --color-text-primary: #F5F5F5;
-  --color-text-secondary: #A1A1AA;
-  --color-accent: #8B5CF6;
-  --color-accent-hover: #7C3AED;
-  --color-border: #27272A;
-  --font-sans: "Inter", sans-serif;
+  --color-field: #070a0f;
+  --color-panel: #0d1217;
+  --color-ink: #f1f4ea;
+  --color-muted: #8d988b;
+  --color-line: #2b332c;
+  --color-signal: #d9ff4f;
+  --color-caution: #ffb000;
+  --font-sans: "Archivo", Arial, sans-serif;
+  --font-mono: "Azeret Mono", Consolas, monospace;
+}
+
+:root { color-scheme: dark; }
+html { scroll-behavior: smooth; background: #070a0f; }
+body { margin: 0; min-width: 320px; background: #070a0f; color: #f1f4ea; font-family: var(--font-sans); }
+button, a { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 2px solid #d9ff4f; outline-offset: 4px; }
+::selection { background: #d9ff4f; color: #070a0f; }
+
+.instrument-field { position: relative; border: 1px solid #2b332c; background: #0d1217; }
+.signal-scan::before { content: ""; position: absolute; z-index: 20; top: 0; right: 0; left: 0; height: 1px; pointer-events: none; background: rgb(217 255 79 / 55%); transform: translateY(-1px); animation: signal-scan 1.2s ease-out 0.3s 1 forwards; }
+@keyframes signal-scan { to { opacity: 0; transform: translateY(18rem); } }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
