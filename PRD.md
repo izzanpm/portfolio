@@ -92,7 +92,7 @@ Konten dasar dari CV:
 > Mahasiswa Computer Science semester 7 di Bina Nusantara University, tertarik pada posisi Data Analyst dan Data Scientist. Memiliki key skills adaptability, time management, teamwork, dan perfectionism. Terbiasa menggunakan berbagai tools (Rapidminer, RStudio, VSCode, Eclipse, Hadoop, Cloudera, XAMPP, Canva, Microsoft Excel) serta bahasa pemrograman (R, SQL, MySQL, HTML, CSS, Java, JavaScript, C++, Python).
 
 Ditambah info edukasi:
-- **Bina Nusantara University** — Undergraduate, Computer Science, GPA 3.21/4.00
+- **Bina Nusantara University** — Undergraduate, Computer Science, GPA 3.55/4.00
 
 Kontak: email (izzan.pm@gmail.com), telepon, lokasi (South Tangerang, Banten), LinkedIn.
 

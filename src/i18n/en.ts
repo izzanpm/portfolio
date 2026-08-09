@@ -60,7 +60,7 @@ export const en: Record<string, string> = {
   "profile.role.head": "Head of Division",
   "profile.university": "Bina Nusantara University",
   "profile.degree": "Bachelor of Computer Science",
-  "profile.gpa": "GPA 3.21 / 4.00",
+  "profile.gpa": "GPA 3.55 / 4.00",
   "contact.label": "Contact / next step",
   "contact.title": "Need a closer look at the work?",
   "contact.body": "View the CV or contact me to discuss a data role, the methods behind these projects, or the evidence still being documented.",

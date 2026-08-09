@@ -106,7 +106,7 @@ public/
 
 ### 5.3 About Me Section
 - 2-column layout (desktop): left placeholder photo, right bio text
-- Bio from PRD + education info (BINUS, GPA 3.21/4.00)
+- Bio from PRD + education info (BINUS, GPA 3.55/4.00)
 - Contact info: email, location (South Tangerang)
 - Mobile: vertical stack (photo top, text bottom)
 
