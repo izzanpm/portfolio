@@ -48,7 +48,7 @@ The result remains a single-page bilingual React portfolio. It replaces the incu
 
 The fixed navigation contains:
 
-- `IZN://PORTFOLIO`, linking to the opening viewport.
+- `IZZAN://PORTFOLIO`, linking to the opening viewport.
 - `Work`, linking to the featured case studies.
 - `Profile`, linking to background and capabilities.
 - `Contact`, linking to the closing conversion section.

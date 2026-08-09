@@ -90,7 +90,7 @@ public/
 ## 5. Sections Detail
 
 ### 5.1 Navbar (sticky, backdrop blur)
-- Left: initials **IZN** (purple, bold)
+- Left: initials **IZZAN** (purple, bold)
 - Center/Right: About, Skills, Projects, Experience, Contact
 - Right: ID/EN toggle, Download CV button
 - Scroll spy highlights active link in purple

@@ -33,7 +33,7 @@ Visitors typically scan the site on desktop or mobile during candidate review. T
 
 ## Brand Commitments
 
-- Use the full name Mohammad Izzan Putra Maulana and the existing `IZN` shorthand.
+- Use the full name Mohammad Izzan Putra Maulana and the existing `IZZAN` shorthand.
 - Present the role as Data Analyst and Data Scientist.
 - Preserve English and Indonesian language support.
 - Keep the voice direct, technically credible, and free of inflated claims.

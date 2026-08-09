@@ -1,5 +1,5 @@
 ---
-name: "IZN Analytical Observatory"
+name: "Izzan Analytical Observatory"
 description: "A proof-first portfolio rendered as a precise analytical inspection surface."
 colors:
   field: "#070a0f"
@@ -105,7 +105,7 @@ components:
     height: "3.5rem"
 ---
 
-# Design System: IZN Analytical Observatory
+# Design System: Izzan Analytical Observatory
 
 ## Overview
 
@@ -217,7 +217,7 @@ Components are direct, square, and stateful through color rather than physical m
 - **Internal Padding:** `1.25rem` in the compact opening field; `1.5rem` rising to `2rem` in full case-study fields.
 
 ### Navigation
-- The navigation is a fixed `4.5rem` Matte Field bar with a Structural Line bottom border. The `IZN://PORTFOLIO` mark and active section use Phosphor Signal; inactive links use Muted Steel and move to Soft Bone Ink on hover.
+- The navigation is a fixed `4.5rem` Matte Field bar with a Structural Line bottom border. The `IZZAN://PORTFOLIO` mark and active section use Phosphor Signal; inactive links use Muted Steel and move to Soft Bone Ink on hover.
 - Navigation labels use uppercase Azeret Mono at compact sizes and maintain `44px` targets. At the medium breakpoint, desktop links and controls replace a collapsed native `<details>/<summary>` disclosure. Its summary is a `44px` Menu target; its full-width ruled panel contains Work, Profile, Contact, and CV links and remains operable in the pre-rendered document without JavaScript.
 - Hydration enables locale controls and active-section behavior without replacing the native disclosure. Navigation landmarks, actions, and disclosure labels use the complete English/Indonesian dictionaries, and the selected locale updates the document language.
 

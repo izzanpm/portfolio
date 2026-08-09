@@ -52,7 +52,7 @@ Referensi desain: [izzanporto.framer.website](https://izzanporto.framer.website/
 - Tagline singkat (mengikuti gaya referensi): *"Computer science student with a passion for exploration in the realm of data"*
 - Role/fokus: Data Analyst & Data Scientist enthusiast
 - CTA: tombol "Lihat Project" (scroll ke section Project) dan/atau "Download CV"
-- Navigasi utama: Logo/Inisial (IZN), About, Project, Experience, Contact
+- Navigasi utama: Logo/Inisial (IZZAN), About, Project, Experience, Contact
 - Ikon kontak cepat: LinkedIn, Email (Gmail), Outlook — mengikuti referensi
 
 ### 5.2 Skills Section

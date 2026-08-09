@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <nav className="fixed inset-x-0 top-0 z-50 border-b border-line bg-field" aria-label={t("nav.primary")}>
       <div className="mx-auto flex h-[4.5rem] max-w-7xl items-center justify-between px-5 lg:px-8">
-        <a href="#top" className="inline-flex min-h-11 items-center font-mono text-sm font-semibold tracking-[0.08em] text-signal">IZN://PORTFOLIO</a>
+        <a href="#top" className="inline-flex min-h-11 items-center font-mono text-sm font-semibold tracking-[0.08em] text-signal">IZZAN://PORTFOLIO</a>
         <div className="hidden items-center gap-7 md:flex">
           {navItems.map((item) => (
             <a key={item.id} href={`#${item.id}`} aria-current={activeId === item.id ? "location" : undefined} className={activeId === item.id ? "inline-flex min-h-11 items-center font-mono text-xs uppercase tracking-[0.12em] text-signal" : "inline-flex min-h-11 items-center font-mono text-xs uppercase tracking-[0.12em] text-muted hover:text-ink"}>

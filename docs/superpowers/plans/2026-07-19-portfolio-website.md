@@ -701,7 +701,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <button onClick={() => scrollTo("hero")} className="text-accent font-bold text-xl tracking-tight">
-            IZN
+            IZZAN
           </button>
 
           <div className="hidden md:flex items-center gap-8">
@@ -833,7 +833,7 @@ export default App;
 npm run dev
 ```
 
-Expected: Sticky navbar with IZN logo, nav links, language toggle, and Download CV button. Scroll spy highlights active section. Mobile hamburger menu works.
+Expected: Sticky navbar with IZZAN logo, nav links, language toggle, and Download CV button. Scroll spy highlights active section. Mobile hamburger menu works.
 
 - [ ] **Step 4: Commit**
 
