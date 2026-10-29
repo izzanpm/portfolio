@@ -3,6 +3,7 @@ import { cvUrl } from "../data/links";
 import { featuredProjects } from "../data/projects";
 import { useLanguage } from "../hooks/useLanguage";
 import EvidencePanel from "./EvidencePanel";
+import WebBuildPanel from "./WebBuildPanel";
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -21,7 +22,7 @@ export default function Hero() {
       </div>
       <div>
         <p className="mb-3 font-mono text-[0.68rem] uppercase tracking-[0.14em] text-muted">01 / {project.title}</p>
-        <EvidencePanel project={project} compact />
+        {project.type === "web" ? <WebBuildPanel project={project} compact /> : <EvidencePanel project={project} compact />}
       </div>
     </section>
   );
