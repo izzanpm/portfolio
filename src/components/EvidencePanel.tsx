@@ -1,14 +1,14 @@
-import type { FeaturedProject } from "../data/projects";
+import type { FeaturedDataProject } from "../data/projects";
 import { useLanguage } from "../hooks/useLanguage";
 
-export default function EvidencePanel({ project, compact = false }: { project: FeaturedProject; compact?: boolean }) {
+export default function EvidencePanel({ project, compact = false, displayIndex = project.featured }: { project: FeaturedDataProject; compact?: boolean; displayIndex?: number }) {
   const { t } = useLanguage();
   const evidence = project.evidence;
 
   return (
     <div className={`instrument-field overflow-hidden ${compact ? "signal-scan p-5" : "p-6 sm:p-8"}`}>
       <div className="relative z-10 flex items-center justify-between border-b border-line pb-3 font-mono text-[0.68rem] uppercase tracking-[0.14em] text-muted">
-        <span>{String(project.featured).padStart(2, "0")} / {t(`category.${project.category}`)}</span>
+        <span>{String(displayIndex).padStart(2, "0")} / {t(`category.${project.category}`)}</span>
         <span>{project.year}</span>
       </div>
       <div className="relative z-10 mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(9rem,16rem)]">

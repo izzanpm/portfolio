@@ -1,8 +1,8 @@
-import type { FeaturedProject } from "../data/projects";
+import type { FeaturedDataProject } from "../data/projects";
 import { useLanguage } from "../hooks/useLanguage";
 import EvidencePanel from "./EvidencePanel";
 
-export default function CaseStudy({ project, reverse }: { project: FeaturedProject; reverse: boolean }) {
+export default function CaseStudy({ project, reverse, displayIndex = project.featured }: { project: FeaturedDataProject; reverse: boolean; displayIndex?: number }) {
   const { t } = useLanguage();
   const setupFields = [
     ["case.question", `projects.${project.id}.question`],
@@ -17,7 +17,7 @@ export default function CaseStudy({ project, reverse }: { project: FeaturedProje
       <div className="mb-10 flex flex-wrap items-end justify-between gap-5">
         <div>
           <h3 className="max-w-3xl text-3xl font-bold tracking-[-0.035em] sm:text-5xl">{project.title}</h3>
-          <p className="mt-4 font-mono text-xs uppercase tracking-[0.16em] text-signal">{t("case.label")} {String(project.featured).padStart(2, "0")} / {project.year}</p>
+          <p className="mt-4 font-mono text-xs uppercase tracking-[0.16em] text-signal">{t("case.label")} {String(displayIndex).padStart(2, "0")} / {project.year}</p>
         </div>
         <p className="max-w-lg text-base leading-7 text-muted">{t(`projects.${project.id}.summary`)}</p>
       </div>
@@ -31,7 +31,7 @@ export default function CaseStudy({ project, reverse }: { project: FeaturedProje
           ))}
         </dl>
         <div className={`mt-10 lg:row-span-3 lg:row-start-1 lg:mt-0 ${evidenceColumn}`}>
-          <EvidencePanel project={project} />
+          <EvidencePanel project={project} displayIndex={displayIndex} />
         </div>
         <dl className={`mt-10 border-t border-line lg:row-start-2 lg:mt-0 lg:border-t-0 ${detailColumn}`}>
           <div className="grid gap-2 border-b border-line py-5 sm:grid-cols-[9rem_1fr]">
