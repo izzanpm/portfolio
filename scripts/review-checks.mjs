@@ -32,6 +32,7 @@ assert.match(navbar, /closest\("details"\)\?\.removeAttribute\("open"\)/);
 assert.doesNotMatch(navbar, /mobileOpen|setMobileOpen|\bX\b/);
 assert.equal(en["nav.localeSwitch"], "Use Indonesian");
 assert.equal(id["nav.localeSwitch"], "Gunakan bahasa Inggris");
+assert.equal(cvUrl, "https://drive.google.com/file/d/1F2Bf3neg_9q7--dASm3U7g_O6IyXSQ3_/view?usp=sharing");
 assert.equal(en["case.label"], "Case");
 assert.equal(id["case.label"], "Studi kasus");
 
